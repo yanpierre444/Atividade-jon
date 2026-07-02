@@ -13,6 +13,15 @@
         h1 {
             color: #8b0000;
         }
+
+        .botao {
+            background-color: #006600;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -24,6 +33,7 @@
 
 <button class="botao" onclick="mostrarAlerta()">Aviso</button>
 <button class="botao" onclick="marcarGolo()">Golo</button>
+<button class="botao" onclick="fimJogo()">Fim de Jogo</button>
 
 
 <script>
@@ -31,6 +41,10 @@
 
     function mostrarAlerta() {
     alert("O jogo vai começar!")
+    }
+
+    function mostrarAlerta() {
+    alert("O jogo terminou! Grande partida!")
     }
 
     function marcarGolo() {
