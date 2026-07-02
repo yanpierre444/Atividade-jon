@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho</title>
+    <style>
+        body {
+            background-color: #e0f7fa;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #8b0000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mundial 2026</h1>
+
+<p id=class"mensagem">Bem-vindo ao jogo!</p>
+
+<h2>Golos de Portugal: <span id="numero-golos">0</span></h2>
+
+<button class="botao" onclick="mostrarAlerta()">Aviso</button>
+<button class="botao" onclick="marcarGolo()">Golo</button>
+
+
+<script>
+    var totalGolos = 0
+
+    function mostrarAlerta() {
+    alert("O jogo vai começar!")
+    }
+
+    function marcarGolo() {
+        totalGolos = totalGolos + 1;
+        ducument.getElementByid("numero-golos").innerhtml = totalGolos;
+    }
+</script>
+
+</body>
+</html>
